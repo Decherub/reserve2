@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/nfb.css">
+    <style>
+    
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+        }
+    
+        
+        nav {
+          background-image:url(../assets/nbf3.png);
+          background-size: 100%; 
+          background-repeat: no-repeat; 
+          background-position: center; 
+          height: 360px; 
+          padding: 20px;
+          position: relative;
+        }
+    
+        .nav-links {
+          display: flex;
+          justify-content: space-around;
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+    
+        .nav-links li {
+          margin: 0 10px;
+        }
+    
+        .nav-links a {
+          color: rgb(240, 235, 235);
+          text-decoration: none;
+          padding: 10px 20px;
+          display: block;
+          text-align: center;
+          font-weight: bold;
+          background-color: rgba(239, 176, 176, 0);
+          border-radius: 5px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+          transition: all 0.3s ease-in-out;
+        }
+    
+        .nav-links a:hover {
+          background-color: rgba(249, 182, 182, 0.959);
+          box-shadow: 0 8px 12px rgba(249, 5, 5, 0.655);
+          transform: translateY(-10px);
+        }
+    
+        .hamburger {
+          display: none;
+          font-size: 30px;
+          cursor: pointer;
+          color: rgb(96, 58, 58);
+          position: absolute;
+          right: 20px;
+          top: 15px;
+        }
+    
+        @media (max-width: 768px) {
+          .nav-links {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            background-color: rgba(51, 51, 51, 0.9);
+            top: 50px;
+            right: 0;
+            width: 100%;
+            text-align: right;
+          }
+    
+          .nav-links li {
+            margin: 0;
+          }
+    
+          .hamburger {
+            display: block;
+          }
+    
+          .nav-links.active {
+            display: flex;
+          }
+        }
+    
+        
+        .content {
+          flex: 1; 
+          padding: 20px;
+          text-align: center;
+        }
+    
+       
+        footer {
+          background-color: #8c5050;
+          color: white;
+          padding: 7px 0;
+          text-align: center;
+        }
+    
+        .footer-links {
+          list-style: none;
+          padding: 0;
+          margin: 10px 0;
+        }
+    
+        .footer-links li {
+          display: inline;
+          margin: 0 15px;
+        }
+    
+        .footer-links a {
+          color: white;
+          text-decoration: none;
+          transition: color 0.3s;
+        }
+    
+        .footer-links a:hover {
+          color: rgb(225, 14, 14);
+        }
+    
+        .footer-text {
+          margin-top: 10px;
+          font-size: 14px;
+        }
+        .container {
+                display: flex;
+                align-items: center; 
+                justify-content: flex-start; 
+                border: 1px solid #ccc; 
+                padding: 10px;
+            }
+            img {
+                width: 100px;
+                margin-right: 15px; 
+            }
+            .text {
+                font-size: 16px;
+            }
+    
+      </style>
+</head>
+<body>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" style="padding-left: 0px; padding-top: 290px; gap: 75px;">
+          <li><a href="../html/reserve.html">   Home   </a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Donate</a></li>
+        </ul>
+      </nav> 
+      <h2>In The Beginning </h2> 
+    <div>
+        <div class="horizontal-container">
+            <div class="text-section" style="display: flex;">
+                In an attempt to find a lasting solution to a national
+                book Crisis, a concerned writer,
+                Chukwuemeka Ike convened a meeting of writers.
+                publishers, and representatives of various
+                professional groups in the book industry at Ibadan on
+                May 24, 1990. The meeting resolved to establish the
+                Nigerian Book Development Forum (NBDF). The
+                forum elected Professor Ike as convener and
+                appointed a task force with the following
+                membership to act on its behalf when necessary.
+                *Professor Chukwuemeka Ike,
+                *The Hon. Dr. T.Akinola Aguda,
+                *Mr. B.O. Bolodeoku,
+                *Mr. E. AkinThomas,
+                *Mrs. Mabel D. Segun,
+                *Chief Nuhu Bature,
+                *Dr. Bode Sowande,
+                *Engr. Victor U. Nwankwo,
+                *Professor Theo Vincent,
+                *Mr Tope Popoola.
+                *University Press Plc Ibadan voluntarily served as
+                the secretariat for the forum and made available the
+                part-time services of Mrs. L.L. Onifade as secretary.
+                
+                The task force held nine meetings and was granted
+                four hearings by the Presidential Advisory
+                Committee between June 1990 June 1991. After
+                weighing the pros and cons of establishing a central
+                book development agency as a government
+                parastatal, the Task Force opted for a non-
+                governmental, non-profit Foundation. On July 16,
+                1991, the Nigerian Book Development Forum met at
+                Ibadan and endorsed the establishment of the
+                Nigerian Book Foundation (NBF), thereby
+                dissolving itself. A Board of Directors established on
+                the same date ceased to exist in December 1992 on
+                technical grounds. A Board of Trustees, which
+                replaced it held its first meeting in Lagos on April 15,
+                1993.
+                
+                The Foundation set up its Secretariat at Awka,
+                Anambra State, in October 1993, and in December
+                14, 1994, the National Advisory Council of the
+                The foundation held its first meeting in Lagos.</div>
+            <div class="box" style="text-align:left;">
+                
+                </div>
+        </div>
+    </div>
+    <foote style="background-color: rgba(121, 6, 25, 0.804);">
+        <ul class="footer-links" style="text-align: right; padding-left: 420px;color: #5013eb;">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <p class="footer-text" style="padding-left: 420px; color: #cac0c2;">&copy; 2024 NIGERIAN BOOK FOUNDATION. All rights reserved.</p>
+      </footer>
+</body>
+</html>
